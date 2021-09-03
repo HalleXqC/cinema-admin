@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.root{
+    width: 100%;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2rem;
+    transition: 0.3s;
+    padding-bottom: 3rem;
+    fieldset{
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        padding: 1.5rem;
+        legend{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #d22215;
+            transition: 0.3s;
+        }
+        form{
+            position: relative;
+            width: 100%;
+            min-height: 10vh;
+            text-align: center;
+            label{
+                position: relative;
+                display: block;
+                width: 100%;
+                padding: 0.5rem;
+                padding-left: 0;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                input{
+                    width: 70%;
+                    padding: 1rem 1.5rem;
+                    overflow-y: hidden;
+                    font-size: 16px;
+                    border: 1px solid rgb(180, 180, 180);
+                    outline: none;
+                    transition: 0.3s;
+                    margin-left: auto;
+                    &:focus{
+                        box-shadow: 0 0 1pt 2pt #1DA1F2;
+                    }
+                }
+            }
+            hr{
+                width: 100%;
+                border: none;
+                border-top: 1px solid rgb(220 , 220 , 220);
+                margin: 0.5rem 0;
+            }
+            .submitBtn{
+                color: white;
+                background-color: #d22215;
+                padding: 1rem 1.5rem;
+                font-size: 18px;
+                border: 1px solid #cfcfcf;
+                border-radius: 5px;
+                transition: 0.3s;
+                cursor: pointer;
+                margin-top: 1rem;
+                &:focus,
+                &:hover{
+                    box-shadow: 0 0 0 1pt #1DA1F2;
+                }
+                &:disabled{
+                    background-color: #f0786f;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    .snacks{
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

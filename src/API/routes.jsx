@@ -1,0 +1,8 @@
+export const addNewMovie = 'movies'
+export const getMoviesRoute = 'movies'
+export const deleteMovieRoute = 'movies'
+export const editMovieRoute = 'movies'
+export const addNewSnack = 'snacks'
+export const getSnacksRoute = 'snacks'
+export const editSnackRoute = 'snacks'
+export const deleteSnackRoute = 'snacks'
